@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRAKILL — фан-сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ULTRAKILL</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Про гру</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#download">Завантаження</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Про гру</h2>
+            <p><strong>ULTRAKILL</strong> — це швидкий ретро-шутер у стилі DOOM та Quake, 
+            де гравець бореться проти демонів, використовуючи зброю та власну майстерність.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1229490/capsule_616x353.jpg?t=1774188523.jpg" alt="Скріншот ULTRAKILL">
+                <img src="https://i.pinimg.com/1200x/69/fc/9f/69fc9f990c838815e17072c96a1c4366.jpg" alt="Бій у ULTRAKILL">
+            </div>
+        </section>
+
+        <section id="download">
+            <h2 align = center>Завантаження</h2>
+            <p align = center>Гру можна придбати у <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/" target="_blank" class ="Steam">Steam</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Фан-сайт ULTRAKILL</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e60000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #e60000;
+    letter-spacing: 2px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e60000;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 40%;
+    border: 2px solid #e60000;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #e60000;
+    font-size: 0.9rem;
+}
+
+.Steam{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 40 px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  transition: transform 0.3s;
+}
+
+.Steam:hover{
+  color: red;
+  font-size: 50 px;
+      transform: scale(1.2);
+
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: 80%;
+    }
+}
